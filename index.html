@@ -2,7 +2,11 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=5.0"
+    />
+    <meta name="HandheldFriendly" content="true" />
     <title>
       Cybersecurity & Compliance Consulting – Bits Bastion | SOC2 Experts & ISO
       27001 Advisors
@@ -17,6 +21,7 @@
     />
     <meta name="author" content="Bits Bastion" />
     <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://bitsbastion.com/" />
     <meta
       property="og:title"
       content="Cybersecurity & Compliance Consulting – Bits Bastion"
@@ -27,6 +32,12 @@
     />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://bitsbastion.com" />
+    <meta
+      property="og:image"
+      content="https://bitsbastion.com/assets/social-preview.jpg"
+    />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta
       name="twitter:title"
@@ -36,12 +47,58 @@
       name="twitter:description"
       content="Expert cybersecurity consulting and compliance solutions for businesses."
     />
+    <meta
+      name="twitter:image"
+      content="https://bitsbastion.com/assets/social-preview.jpg"
+    />
+    <link rel="preload" href="styles.css" as="style" />
     <link rel="stylesheet" href="styles.css" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "ProfessionalService",
+        "name": "Bits Bastion",
+        "image": "https://bitsbastion.com/assets/logo.png",
+        "@id": "https://bitsbastion.com",
+        "url": "https://bitsbastion.com",
+        "telephone": "+1-XXX-XXX-XXXX",
+        "priceRange": "$$$",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "123 Security Lane",
+          "addressLocality": "San Francisco",
+          "addressRegion": "CA",
+          "postalCode": "94107",
+          "addressCountry": "US"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 37.7749,
+          "longitude": -122.4194
+        },
+        "openingHoursSpecification": {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+          "opens": "09:00",
+          "closes": "17:00"
+        },
+        "sameAs": [
+          "https://www.linkedin.com/company/bitsbastion",
+          "https://twitter.com/bitsbastion"
+        ]
+      }
+    </script>
   </head>
   <body>
     <header>
       <div class="logo">
-        <img src="assets/logo.png" alt="Bits Bastion Logo" />
+        <img
+          src="assets/logo.png"
+          alt="Bits Bastion Logo"
+          loading="lazy"
+          width="200"
+          height="60"
+        />
       </div>
       <div class="nav-container">
         <div class="brand-name">Bits Bastion</div>
@@ -86,75 +143,82 @@
         <a href="#contact"><button class="cta-btn">Get Started</button></a>
       </div>
       <div class="hero-img">
-        <img
-          src="https://images.pexels.com/photos/5380642/pexels-photo-5380642.jpeg?auto=compress&cs=tinysrgb&w=800"
-          alt="Cybersecurity consulting and compliance solutions - digital security and risk management"
-          style="max-width: 100%; height: auto; border-radius: 12px"
-        />
+        <picture>
+          <source media="(max-width: 768px)" srcset="assets/hero-mobile.jpg" />
+          <source media="(min-width: 769px)" srcset="assets/hero-desktop.jpg" />
+          <img
+            src="assets/hero-desktop.jpg"
+            alt="Cybersecurity consulting team discussing security strategies"
+            style="max-width: 100%; height: auto; border-radius: 12px"
+            loading="lazy"
+            width="600"
+            height="400"
+          />
+        </picture>
       </div>
     </section>
 
     <section class="section" id="services">
-      <h2 class="section-title">Key Services</h2>
+      <h1 class="section-title">Key Services</h1>
       <div class="services">
         <div class="service-card">
-          <h3>SOC2 Attestation</h3>
+          <h2>SOC2 Attestation</h2>
           <p>
             Streamlined SOC2 preparation with gap assessments, remediation, and
             audit readiness in just 8 weeks.
           </p>
         </div>
         <div class="service-card">
-          <h3>ISO 27001 Certification</h3>
+          <h2>ISO 27001 Certification</h2>
           <p>
             Achieve ISO 27001 certification through structured gap analysis,
             remediation, and internal audits.
           </p>
         </div>
         <div class="service-card">
-          <h3>PCI DSS Compliance</h3>
+          <h2>PCI DSS Compliance</h2>
           <p>
             Secure your payment infrastructure and achieve PCI DSS compliance
             quickly and effectively.
           </p>
         </div>
         <div class="service-card">
-          <h3>Cloud Security</h3>
+          <h2>Cloud Security</h2>
           <p>
             Ensure your cloud environment is secure and compliant with industry
             best practices.
           </p>
         </div>
         <div class="service-card">
-          <h3>Risk Assessment</h3>
+          <h2>Risk Assessment</h2>
           <p>
             Identify vulnerabilities and mitigate risks across your business
             operations with a tailored approach to assess and manage risks.
           </p>
         </div>
         <div class="service-card">
-          <h3>NIST Cybersecurity</h3>
+          <h2>NIST Cybersecurity</h2>
           <p>
             Our NIST services help you align your organization with this
             critical framework, protecting against cyber threats.
           </p>
         </div>
         <div class="service-card">
-          <h3>Privacy</h3>
+          <h2>Privacy</h2>
           <p>
             Ensure your data privacy measures are in place and you comply with
             the most stringent data protection regulations.
           </p>
         </div>
         <div class="service-card">
-          <h3>Third Party Risk Management</h3>
+          <h2>Third Party Risk Management</h2>
           <p>
             Assess and manage risks from your vendors and partners to ensure
             supply chain security.
           </p>
         </div>
         <div class="service-card">
-          <h3>Policies & Procedures</h3>
+          <h2>Policies & Procedures</h2>
           <p>
             Develop robust, compliant security documentation tailored to your
             needs.
@@ -164,25 +228,25 @@
     </section>
 
     <section class="section" id="about">
-      <h2 class="section-title">About</h2>
+      <h1 class="section-title">About</h1>
       <div class="why-us">
         <div class="why-card">
-          <h4>Industry Expertise</h4>
+          <h3>Industry Expertise</h3>
           <p>Years of hands-on experience in ISO 27001, SOC2, and more.</p>
         </div>
         <div class="why-card">
-          <h4>Tailored Solutions</h4>
+          <h3>Tailored Solutions</h3>
           <p>We customize our approach to meet your specific needs.</p>
         </div>
         <div class="why-card">
-          <h4>Proven Track Record</h4>
+          <h3>Proven Track Record</h3>
           <p>
             Clients consistently achieve successful audits and certifications
             with our support.
           </p>
         </div>
         <div class="why-card">
-          <h4>Comprehensive Support</h4>
+          <h3>Comprehensive Support</h3>
           <p>
             From initial assessments to audit readiness, we offer end-to-end
             compliance solutions.
@@ -192,9 +256,13 @@
     </section>
 
     <section class="testimonials">
-      <h2 class="section-title">Testimonials</h2>
+      <h1 class="section-title">Testimonials</h1>
       <div class="testimonial-slider">
-        <button class="slider-btn prev-btn" onclick="changeTestimonial(-1)">
+        <button
+          class="slider-btn prev-btn"
+          onclick="changeTestimonial(-1)"
+          aria-label="Previous testimonial"
+        >
           ❮
         </button>
 
@@ -229,23 +297,39 @@
           </div>
         </div>
 
-        <button class="slider-btn next-btn" onclick="changeTestimonial(1)">
+        <button
+          class="slider-btn next-btn"
+          onclick="changeTestimonial(1)"
+          aria-label="Next testimonial"
+        >
           ❯
         </button>
       </div>
 
       <div class="testimonial-dots">
-        <span class="dot active" onclick="goToTestimonial(0)"></span>
-        <span class="dot" onclick="goToTestimonial(1)"></span>
-        <span class="dot" onclick="goToTestimonial(2)"></span>
+        <span
+          class="dot active"
+          onclick="goToTestimonial(0)"
+          aria-label="View testimonial 1"
+        ></span>
+        <span
+          class="dot"
+          onclick="goToTestimonial(1)"
+          aria-label="View testimonial 2"
+        ></span>
+        <span
+          class="dot"
+          onclick="goToTestimonial(2)"
+          aria-label="View testimonial 3"
+        ></span>
       </div>
     </section>
 
     <section id="contact">
-      <h2 class="section-title">Contact Us</h2>
+      <h1 class="section-title">Contact Us</h1>
       <div class="contact-form-container">
         <form id="contactForm" class="contact-form">
-          <h3>Reach out to us for a free consultation</h3>
+          <h2>Reach out to us for a free consultation</h2>
 
           <div class="form-group">
             <label for="name">Name *</label>
@@ -255,17 +339,19 @@
               name="name"
               required
               placeholder="Your answer"
+              aria-required="true"
             />
           </div>
 
           <div class="form-group">
-            <label for="email">Email Id *</label>
+            <label for="email">Email *</label>
             <input
               type="email"
               id="email"
               name="email"
               required
               placeholder="Your answer"
+              aria-required="true"
             />
           </div>
 
@@ -277,6 +363,7 @@
               rows="5"
               required
               placeholder="Your answer"
+              aria-required="true"
             ></textarea>
           </div>
 
@@ -303,6 +390,7 @@
       <a
         href="https://calendly.com/srishti-bitsbastion/30min"
         target="_blank"
+        rel="noopener noreferrer"
         class="floating-cta-btn"
       >
         <i style="margin-right: 0.5rem">📅</i> Book an Appointment
