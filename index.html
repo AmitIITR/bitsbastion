@@ -3,8 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <!-- SEO Meta Tags -->
     <title>
       Cybersecurity & Compliance Consulting – Bits Bastion | SOC2 Experts & ISO
       27001 Advisors
@@ -19,8 +17,6 @@
     />
     <meta name="author" content="Bits Bastion" />
     <meta name="robots" content="index, follow" />
-
-    <!-- Open Graph Meta Tags -->
     <meta
       property="og:title"
       content="Cybersecurity & Compliance Consulting – Bits Bastion"
@@ -31,8 +27,6 @@
     />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://bitsbastion.com" />
-
-    <!-- Twitter Card Meta Tags -->
     <meta name="twitter:card" content="summary_large_image" />
     <meta
       name="twitter:title"
@@ -42,378 +36,30 @@
       name="twitter:description"
       content="Expert cybersecurity consulting and compliance solutions for businesses."
     />
-
-    <style>
-      body {
-        font-family: "Segoe UI", Arial, sans-serif;
-        margin: 0;
-        background: #ffffff;
-        color: #333333;
-      }
-      header {
-        background: #1a365d;
-        color: #ffffff;
-        padding: 2rem 0 1.5rem 0;
-        text-align: center;
-      }
-      nav {
-        margin: 1rem 0;
-        display: flex;
-        justify-content: center;
-        flex-wrap: nowrap;
-        overflow-x: auto;
-        -webkit-overflow-scrolling: touch;
-        padding: 0 1rem;
-      }
-      nav a {
-        color: #ffffff;
-        margin: 0 0.8rem;
-        text-decoration: none;
-        font-weight: 500;
-        transition: color 0.3s ease;
-        white-space: nowrap;
-      }
-      nav a:hover {
-        color: #60a5fa;
-      }
-      .container {
-        max-width: 1200px;
-        margin: 2rem auto;
-        padding: 0 1rem;
-      }
-      .hero {
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: space-between;
-        padding: 4rem 2rem;
-        background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
-        gap: 3rem;
-        min-height: 80vh;
-      }
-      .hero-text {
-        flex: 1 1 500px;
-        max-width: 600px;
-      }
-      .hero-text h1 {
-        font-size: 3rem;
-        margin-bottom: 1.5rem;
-        color: #1a365d;
-      }
-      .hero-img {
-        flex: 1 1 400px;
-        text-align: center;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-      }
-      .hero-img img {
-        max-width: 100%;
-        height: auto;
-        border-radius: 12px;
-        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
-      }
-      .cta-btn {
-        background: #2563eb;
-        color: #ffffff;
-        border: none;
-        padding: 1rem 2.5rem;
-        border-radius: 8px;
-        font-size: 1.1rem;
-        cursor: pointer;
-        margin-top: 1.5rem;
-        transition: background 0.3s ease;
-      }
-      .cta-btn:hover {
-        background: #1d4ed8;
-      }
-      .section-title {
-        color: #1a365d;
-        font-size: 2.5rem;
-        margin-bottom: 1.5rem;
-        text-align: center;
-        font-weight: 600;
-      }
-      .services {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 2rem;
-        justify-content: center;
-      }
-      .service-card {
-        background: #ffffff;
-        border-radius: 16px;
-        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
-        padding: 2rem;
-        flex: 1 1 300px;
-        min-width: 300px;
-        max-width: 350px;
-        border: 1px solid #e2e8f0;
-        transition: transform 0.3s ease, box-shadow 0.3s ease;
-      }
-      .service-card:hover {
-        transform: translateY(-5px);
-        box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
-      }
-      .service-card h3 {
-        color: #1a365d;
-        margin-bottom: 1rem;
-        font-size: 1.3rem;
-      }
-      .service-card p {
-        color: #64748b;
-        line-height: 1.6;
-      }
-      .team {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 2rem;
-        margin-top: 2rem;
-      }
-      .team-member {
-        background: #ffffff;
-        border-radius: 16px;
-        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
-        padding: 2rem;
-        flex: 1 1 350px;
-        min-width: 300px;
-        border: 1px solid #e2e8f0;
-      }
-      .team-member h3 {
-        margin-top: 0;
-        color: #2563eb;
-        font-size: 1.4rem;
-      }
-      .team-member strong {
-        color: #1a365d;
-      }
-      .team-member p {
-        color: #64748b;
-        line-height: 1.6;
-      }
-      .why-us {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 2rem;
-        justify-items: center;
-      }
-      .why-card {
-        background: #ffffff;
-        border-radius: 16px;
-        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
-        padding: 2rem;
-        width: 100%;
-        max-width: 320px;
-        border: 1px solid #e2e8f0;
-        transition: transform 0.3s ease;
-      }
-      .why-card:hover {
-        transform: translateY(-3px);
-      }
-      .why-card h4 {
-        color: #1a365d;
-        margin-bottom: 1rem;
-      }
-      .why-card p {
-        color: #64748b;
-        line-height: 1.6;
-      }
-      .testimonials {
-        background: linear-gradient(135deg, #f1f5f9 0%, #e2e8f0 100%);
-        padding: 4rem 1rem;
-      }
-      .testimonial-slider {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 2rem;
-        margin: 2rem 0;
-      }
-      .testimonial-container {
-        position: relative;
-        width: 100%;
-        max-width: 600px;
-        height: 200px;
-        overflow: hidden;
-      }
-      .testimonial {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        background: #ffffff;
-        border-radius: 16px;
-        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
-        padding: 2rem 1.5rem;
-        margin: 1rem 0;
-        font-style: italic;
-        opacity: 0;
-        transform: translateX(100%);
-        transition: all 0.5s ease;
-        border: 1px solid #e2e8f0;
-      }
-      .testimonial.active {
-        opacity: 1;
-        transform: translateX(0);
-      }
-      .testimonial p {
-        color: #374151;
-      }
-      .testimonial strong {
-        color: #1a365d;
-      }
-      .slider-btn {
-        background: #2563eb;
-        color: #ffffff;
-        border: none;
-        border-radius: 50%;
-        width: 50px;
-        height: 50px;
-        font-size: 1.5rem;
-        cursor: pointer;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        transition: background 0.3s ease;
-      }
-      .slider-btn:hover {
-        background: #1d4ed8;
-      }
-      .testimonial-dots {
-        display: flex;
-        justify-content: center;
-        gap: 0.5rem;
-        margin-top: 1rem;
-      }
-      .dot {
-        width: 12px;
-        height: 12px;
-        border-radius: 50%;
-        background: #cbd5e1;
-        cursor: pointer;
-        transition: background 0.3s ease;
-      }
-      .dot.active {
-        background: #2563eb;
-      }
-      .contact-form-container {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
-      .contact-form {
-        background: #ffffff;
-        border-radius: 16px;
-        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
-        padding: 2.5rem;
-        max-width: 500px;
-        width: 100%;
-        border: 1px solid #e2e8f0;
-      }
-      .contact-form h3 {
-        text-align: center;
-        margin-bottom: 2rem;
-        color: #1a365d;
-        font-size: 1.5rem;
-      }
-      .form-group {
-        margin-bottom: 1.5rem;
-      }
-      .form-group label {
-        display: block;
-        margin-bottom: 0.5rem;
-        font-weight: 500;
-        color: #1a365d;
-      }
-      .form-group input,
-      .form-group textarea {
-        width: 100%;
-        padding: 0.8rem;
-        border: 1px solid #d1d5db;
-        border-radius: 8px;
-        font-size: 1rem;
-        box-sizing: border-box;
-        transition: border-color 0.3s ease;
-      }
-      .form-group input:focus,
-      .form-group textarea:focus {
-        outline: none;
-        border-color: #2563eb;
-        box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
-      }
-      .contact-form button {
-        width: 100%;
-        background: #2563eb;
-        color: #ffffff;
-        border: none;
-        padding: 1rem;
-        border-radius: 8px;
-        font-size: 1rem;
-        cursor: pointer;
-        margin-top: 1rem;
-        transition: background 0.3s ease;
-      }
-      .contact-form button:hover {
-        background: #1d4ed8;
-      }
-      .success {
-        color: #059669;
-        background: #d1fae5;
-        padding: 1rem;
-        border-radius: 8px;
-        border: 1px solid #a7f3d0;
-      }
-      .error-message {
-        color: #dc2626;
-        background: #fef2f2;
-        padding: 1rem;
-        border-radius: 8px;
-        border: 1px solid #fecaca;
-      }
-      footer {
-        background: #1a365d;
-        color: #ffffff;
-        text-align: center;
-        padding: 2rem 0;
-        margin-top: 3rem;
-      }
-      @media (max-width: 900px) {
-        .hero {
-          flex-direction: column;
-        }
-        .services,
-        .team,
-        .why-us {
-          flex-direction: column;
-          align-items: center;
-        }
-        .hero-text h1 {
-          font-size: 2.5rem;
-        }
-      }
-
-      @media (max-width: 480px) {
-        nav a {
-          margin: 0 0.5rem;
-          font-size: 0.9rem;
-        }
-      }
-    </style>
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <header>
-      <h2 style="font-size: 3rem; margin-bottom: 0.5rem">Bits Bastion</h2>
-      <nav>
-        <a href="#home">Home</a>
-        <a href="#services">Services</a>
-        <a href="#about">About</a>
-        <a href="#contact">Contact</a>
-      </nav>
+      <div class="logo">
+        <img src="assets/logo.png" alt="Bits Bastion Logo" />
+      </div>
+      <div class="nav-container">
+        <div class="brand-name">Bits Bastion</div>
+        <nav>
+          <a href="index.html">Home</a>
+          <a href="#services">Services</a>
+          <a href="SOC2.html">SOC2</a>
+          <a href="#about">About</a>
+        </nav>
+      </div>
+      <div class="cta-container">
+        <a href="#contact"><button class="cta-btn">Contact Us</button></a>
+      </div>
     </header>
 
     <section class="hero" id="home">
       <div class="hero-text">
-        <h1>Leading Cybersecurity & Compliance Solutions</h1>
+        <h1>Leading Cybersecurity Solutions Provider</h1>
         <p style="font-size: 1.2rem; line-height: 1.6; margin-bottom: 1.5rem">
           <strong>Secure Growth. Trusted Expertise. Lasting Confidence.</strong>
         </p>
@@ -494,7 +140,7 @@
           </p>
         </div>
         <div class="service-card">
-          <h3>GDPR</h3>
+          <h3>Privacy</h3>
           <p>
             Ensure your data privacy measures are in place and you comply with
             the most stringent data protection regulations.
@@ -555,27 +201,30 @@
         <div class="testimonial-container">
           <div class="testimonial active" data-index="0">
             <p>
-              "Working with Bits Bastion was a game-changer for Drip Capital.
-              Their team guided us through ISO 27001 certification with
-              professionalism and deep expertise, ensuring our compliance goals
-              were met efficiently and effectively."<br />
-              <strong>- CEO, Drip Capital</strong>
+              "Working with Bits Bastion was a game-changer for Us. Their team
+              guided us through ISO 27001 certification with professionalism and
+              deep expertise, ensuring our compliance goals were met efficiently
+              and effectively."<br />
+              <strong>- CEO, Trade Finance Company </strong>
             </p>
           </div>
           <div class="testimonial" data-index="1">
             <p>
               "The Bits Bastion team brought a practical, hands-on approach to
-              our security and compliance initiatives at Xalts. Their knowledge
-              of SOC2 and risk management helped us build a robust security
-              posture and pass our audits with confidence."<br />
-              <strong>- CTO, Xalts</strong>
+              our security and compliance initiatives. Their knowledge of SOC2
+              and risk management helped us build a robust security posture and
+              pass our audits with confidence."<br />
+              <strong
+                >- CTO, A financial infrastructure platform for
+                fintechs.</strong
+              >
             </p>
           </div>
           <div class="testimonial" data-index="2">
             <p>
               "Bits Bastion made our ISO 27001 and SOC2 journey seamless. Their
               expertise and support were invaluable."<br />
-              <strong>- Stealthmode Fintech Startup</strong>
+              <strong>- CEO, Stealthmode Privacy Product Startup</strong>
             </p>
           </div>
         </div>
@@ -592,83 +241,75 @@
       </div>
     </section>
 
-    <style>
-      .testimonial-slider {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 2rem;
-        margin: 2rem 0;
-      }
+    <section id="contact">
+      <h2 class="section-title">Contact Us</h2>
+      <div class="contact-form-container">
+        <form id="contactForm" class="contact-form">
+          <h3>Reach out to us for a free consultation</h3>
 
-      .testimonial-container {
-        position: relative;
-        width: 100%;
-        max-width: 600px;
-        height: 200px;
-        overflow: hidden;
-      }
+          <div class="form-group">
+            <label for="name">Name *</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              required
+              placeholder="Your answer"
+            />
+          </div>
 
-      .testimonial {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        background: #fff;
-        border-radius: 12px;
-        box-shadow: 0 2px 12px #0001;
-        padding: 2rem 1.5rem;
-        margin: 1rem 0;
-        font-style: italic;
-        opacity: 0;
-        transform: translateX(100%);
-        transition: all 0.5s ease;
-      }
+          <div class="form-group">
+            <label for="email">Email Id *</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              required
+              placeholder="Your answer"
+            />
+          </div>
 
-      .testimonial.active {
-        opacity: 1;
-        transform: translateX(0);
-      }
+          <div class="form-group">
+            <label for="message">Message *</label>
+            <textarea
+              id="message"
+              name="message"
+              rows="5"
+              required
+              placeholder="Your answer"
+            ></textarea>
+          </div>
 
-      .slider-btn {
-        background: #2563eb;
-        color: #fff;
-        border: none;
-        border-radius: 50%;
-        width: 50px;
-        height: 50px;
-        font-size: 1.5rem;
-        cursor: pointer;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        transition: background 0.3s ease;
-      }
+          <button type="submit">Submit</button>
 
-      .slider-btn:hover {
-        background: #1a365d;
-      }
+          <div id="formMessage" style="display: none"></div>
+        </form>
+      </div>
+      <p
+        style="
+          text-align: center;
+          color: #666;
+          font-size: 0.95rem;
+          margin-top: 1rem;
+        "
+      >
+        We respect your privacy. Your information will only be used to respond
+        to your inquiry.
+      </p>
+    </section>
 
-      .testimonial-dots {
-        display: flex;
-        justify-content: center;
-        gap: 0.5rem;
-        margin-top: 1rem;
-      }
+    <!-- Floating CTA -->
+    <div class="floating-cta">
+      <a
+        href="https://calendly.com/srishti-bitsbastion/30min"
+        target="_blank"
+        class="floating-cta-btn"
+      >
+        <i style="margin-right: 0.5rem">📅</i> Book an Appointment
+      </a>
+    </div>
 
-      .dot {
-        width: 12px;
-        height: 12px;
-        border-radius: 50%;
-        background: #cbd5e1;
-        cursor: pointer;
-        transition: background 0.3s ease;
-      }
-
-      .dot.active {
-        background: #2563eb;
-      }
-    </style>
+    <footer>&copy; 2024 Bits Bastion. All rights reserved.</footer>
 
     <script>
       let currentTestimonial = 0;
@@ -700,112 +341,7 @@
         testimonials[currentTestimonial].classList.add("active");
         dots[currentTestimonial].classList.add("active");
       }
-    </script>
 
-    <section id="contact">
-      <h2 class="section-title">Contact Us</h2>
-      <div
-        class="contact-form-container"
-        style="display: flex; justify-content: center; align-items: center"
-      >
-        <form
-          id="contactForm"
-          class="contact-form"
-          style="
-            background: #fff;
-            border-radius: 12px;
-            box-shadow: 0 2px 12px #0001;
-            padding: 2rem;
-            max-width: 500px;
-            width: 100%;
-          "
-        >
-          <h3 style="text-align: center; margin-bottom: 2rem; color: #1a365d">
-            Reach out to us for a free consultation
-          </h3>
-
-          <div class="form-group">
-            <label for="name">Name *</label>
-            <input
-              type="text"
-              id="name"
-              name="name"
-              required
-              placeholder="Your answer"
-            />
-          </div>
-
-          <div class="form-group">
-            <label for="email">Email Id *</label>
-            <input
-              type="email"
-              id="email"
-              name="email"
-              required
-              placeholder="Your answer"
-            />
-          </div>
-
-          <div class="form-group">
-            <label for="phone">Contact Number</label>
-            <input
-              type="tel"
-              id="phone"
-              name="phone"
-              placeholder="Your answer"
-            />
-          </div>
-
-          <div class="form-group">
-            <label for="message">Message *</label>
-            <textarea
-              id="message"
-              name="message"
-              rows="5"
-              required
-              placeholder="Your answer"
-            ></textarea>
-          </div>
-
-          <button
-            type="submit"
-            style="
-              width: 100%;
-              background: #2563eb;
-              color: #fff;
-              border: none;
-              padding: 1rem;
-              border-radius: 8px;
-              font-size: 1rem;
-              cursor: pointer;
-              margin-top: 1rem;
-            "
-          >
-            Submit
-          </button>
-
-          <div
-            id="formMessage"
-            style="margin-top: 1rem; text-align: center; display: none"
-          ></div>
-        </form>
-      </div>
-      <p
-        style="
-          text-align: center;
-          color: #666;
-          font-size: 0.95rem;
-          margin-top: 1rem;
-        "
-      >
-        We respect your privacy. Your information will only be used to respond
-        to your inquiry.
-      </p>
-    </section>
-
-    <footer>&copy; 2024 Bits Bastion. All rights reserved.</footer>
-
-    <script>
       document
         .getElementById("contactForm")
         .addEventListener("submit", function (e) {
@@ -815,21 +351,13 @@
           const formData = new FormData(this);
           const name = formData.get("name");
           const email = formData.get("email");
-          const phone = formData.get("phone");
           const message = formData.get("message");
 
           // Validation
           const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
-          const phoneRegex =
-            /^\s*(?:\+?(\d{1,3}))?[-. (]*(\d{3})[-. )]*(\d{3})[-. ]*(\d{4})(?: *x(\d+))?\s*$/;
 
           if (!emailRegex.test(email)) {
             showMessage("Please enter a valid email address.", "error");
-            return;
-          }
-
-          if (phone && !phoneRegex.test(phone)) {
-            showMessage("Please enter a valid phone number.", "error");
             return;
           }
 
@@ -853,7 +381,6 @@
             const formFields = [
               { name: "entry.187973015", value: name }, // Name field
               { name: "entry.1305694027", value: email }, // Email field
-              { name: "entry.101050550", value: phone }, // Contact Number field
               { name: "entry.552809538", value: message }, // Message field
             ];
 
