@@ -1,3 +1,12 @@
+/* Fix for sticky header */
+body {
+  padding-top: 140px; /* Adjust based on your header height */
+}
+
+.hero {
+  padding-top: 180px; /* Extra padding for hero section */
+}
+
 /* Global Styles */
 body {
   font-family: "Segoe UI", Arial, sans-serif;
@@ -8,7 +17,7 @@ body {
   font-display: swap;
 }
 
-/* Header Styles */
+/* FIXED: Make Header Sticky */
 header {
   background: #1a365d;
   color: #ffffff;
@@ -16,6 +25,12 @@ header {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
 .logo {
@@ -112,7 +127,7 @@ nav a:hover {
   padding: 0 1rem;
 }
 
-/* Hero Section Styles */
+/* Hero Section Styles - RESTORED ORIGINAL STYLING */
 .hero {
   display: flex;
   flex-wrap: wrap;
@@ -133,6 +148,17 @@ nav a:hover {
   font-size: 3rem;
   margin-bottom: 1.5rem;
   color: #1a365d;
+}
+
+.hero-text p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.hero-text p strong {
+  font-size: 1.2rem;
+  line-height: 1.6;
 }
 
 .hero-img {
@@ -179,8 +205,40 @@ nav a:hover {
   font-weight: 600;
 }
 
-/* Card Styles */
-.service-card,
+/* Service Cards Styles - RESTORED ORIGINAL 3x3 GRID */
+.services {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  margin: 3rem 0;
+}
+
+/* Make the service card itself a clickable link */
+.service-card {
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  padding: 2rem;
+  flex: 0 0 calc(33.333% - 1.5rem); /* 3 cards per row with gap */
+  min-width: 300px;
+  max-width: 350px;
+  border: 1px solid #e2e8f0;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  box-sizing: border-box;
+  margin-bottom: 0;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+}
+
+/* Feature cards (for other pages) */
 .feature-card {
   background: #ffffff;
   border-radius: 16px;
@@ -193,7 +251,6 @@ nav a:hover {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.service-card:hover,
 .feature-card:hover {
   transform: translateY(-5px);
   box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
@@ -206,12 +263,21 @@ nav a:hover {
   color: #1a365d;
   margin-bottom: 1rem;
   font-size: 1.3rem;
+  font-weight: 600;
 }
 
 .service-card p,
 .feature-card p {
   color: #64748b;
   line-height: 1.6;
+  margin: 0;
+  font-size: 1rem;
+}
+
+/* Make sure offensive security h3 matches others */
+.service-card h3 {
+  font-size: 1.3rem;
+  font-weight: 600;
 }
 
 /* Stats Styles */
@@ -247,7 +313,6 @@ nav a:hover {
 }
 
 /* Why Us/Features Grid Styles */
-.services,
 .features {
   display: flex;
   flex-wrap: wrap;
@@ -691,6 +756,55 @@ footer {
   padding: 1rem;
   border-radius: 8px;
   border: 1px solid #fecaca;
+}
+
+/* Dropdown Styles */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #ffffff;
+  min-width: 250px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1001;
+  border-radius: 8px;
+  overflow: hidden;
+  top: 100%;
+  left: 0;
+  margin-top: 5px;
+}
+
+.dropdown-content a {
+  color: #1a365d;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  font-size: 1rem;
+  border-bottom: 1px solid #e2e8f0;
+  white-space: nowrap;
+}
+
+.dropdown-content a:last-child {
+  border-bottom: none;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f5f9;
+  color: #2563eb;
+}
+
+/* Show dropdown on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover > a {
+  color: #60a5fa;
 }
 
 /* ================== */
