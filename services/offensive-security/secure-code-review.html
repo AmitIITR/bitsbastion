@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Secure Code Review</title>
+    <meta
+      name="description"
+      content="Manual and automated secure code review to eliminate vulnerabilities early."
+    />
+    <link rel="stylesheet" href="/css/styles.css" />
+  </head>
+
+  <body>
+    <div data-include="/partials/header.html"></div>
+
+    <section class="hero soc-hero">
+      <div class="soc-hero-inner">
+        <h1>Secure Code Review</h1>
+        <p>Identify security flaws directly in your source code.</p>
+        <a href="#contact" class="cta-btn">Start Code Review</a>
+      </div>
+    </section>
+
+    <section class="section">
+      <h1 class="section-title">What We Review</h1>
+      <div class="services">
+        <div class="service-card">
+          <h2>Authentication Logic</h2>
+          <p>Access control and session handling.</p>
+        </div>
+        <div class="service-card">
+          <h2>Input Validation</h2>
+          <p>Injection and deserialization flaws.</p>
+        </div>
+        <div class="service-card">
+          <h2>Cryptography</h2>
+          <p>Key management and encryption usage.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="contact">
+      <h1 class="section-title">Start Secure Code Review</h1>
+      <div class="contact-form-container">
+        <form class="contact-form">
+          <input type="text" placeholder="Full Name" required />
+          <input type="text" placeholder="Company Name" required />
+          <input type="email" placeholder="Work Email" required />
+          <textarea placeholder="Describe your codebase"></textarea>
+          <button type="submit">Request Review</button>
+        </form>
+      </div>
+    </section>
+
+    <div data-include="/partials/footer.html"></div>
+    <script src="/js/include.js"></script>
+  </body>
+</html>

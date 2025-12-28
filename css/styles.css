@@ -15,13 +15,14 @@ body {
 
 .section h2,
 .section h1 {
+  color: #004aad;
   text-align: center;
 }
 
 /* ================= HEADER ================= */
 header {
   background: #ffffff;
-  color: #1122db;
+  color: #004aad;
   padding: 1rem 2rem;
   display: flex;
   align-items: center;
@@ -57,15 +58,15 @@ nav {
 }
 
 nav a {
-  color: #1122db;
+  /* color: #85868c; */
+  color: #004aad;
   text-decoration: none;
   font-weight: 600;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
 }
 
 nav a:hover {
-  color: #1122db;
-  text-decoration: underline;
+  color: #da4b2a;
 }
 
 .cta-container {
@@ -73,16 +74,9 @@ nav a:hover {
   text-align: right;
 }
 
-.brand-name {
-  font-size: 4.5rem;
-  font-weight: 700;
-  text-align: center;
-  color: white;
-}
-
 /* ================= BUTTONS ================= */
 .cta-btn {
-  background: #2563eb;
+  background: #004aad;
   white-space: nowrap;
   color: white;
   border: none;
@@ -94,7 +88,7 @@ nav a:hover {
 }
 
 .cta-btn:hover {
-  background: #1d4ed8;
+  background: #da4b2a;
 }
 
 /* ================= HERO ================= */
@@ -114,7 +108,7 @@ nav a:hover {
 }
 
 .hero-text h1 {
-  color: #1a365d;
+  color: #004aad;
   font-size: 3rem;
   margin-bottom: 1.5rem;
   line-height: 1.2;
@@ -146,6 +140,7 @@ nav a:hover {
   flex-wrap: wrap;
   gap: 2rem;
   justify-content: center;
+  color: #004aad;
 }
 
 .service-card {
@@ -163,11 +158,15 @@ nav a:hover {
 }
 
 .service-card h2 {
-  color: #1a365d;
+  color: #004aad;
+}
+
+.service-card h2:hover {
+  color: #da4b2a;
 }
 
 .service-card p {
-  color: #64748b;
+  color: #333333;
 }
 
 /* ================= CONTACT FORM ================= */
@@ -189,12 +188,13 @@ nav a:hover {
   max-width: 520px;
   width: 100%;
   border: 1px solid #e2e8f0;
+  color: #004aad;
 }
 
 .contact-form h2 {
   text-align: center;
   margin-bottom: 2rem;
-  color: #1a365d;
+  color: #004aad;
 }
 
 .contact-form form {
@@ -231,7 +231,7 @@ iframe {
 }
 
 .floating-cta-btn {
-  background: #2563eb;
+  background: #004aad;
   color: white;
   padding: 1rem 2rem;
   border-radius: 50px;
@@ -240,7 +240,7 @@ iframe {
 }
 
 .floating-cta-btn:hover {
-  background: #1d4ed8;
+  background: #da4b2a;
 }
 
 /* ================= FOOTER ================= */
@@ -261,7 +261,7 @@ footer {
   position: absolute;
   top: 120%;
   left: 0;
-  background: #1d4ed8;
+  background: #ffffff;
   padding: 16px;
   border-radius: 10px;
   min-width: 260px;
@@ -273,8 +273,8 @@ footer {
   display: block;
   width: 100%;
   padding: 10px 14px;
-  color: white;
-  text-decoration: underline;
+  color: #004aad;
+  /* text-decoration: underline; */
   white-space: nowrap;
 }
 
@@ -308,12 +308,12 @@ footer {
 
 .stat-card h2 {
   font-size: 2.8rem;
-  color: #2f64e3;
+  color: #004aad;
   margin-bottom: 0.5rem;
 }
 
 .stat-card p {
-  color: #64748b;
+  color: #333333;
   margin: 0;
   font-weight: 500;
 }
@@ -377,7 +377,7 @@ footer {
 
 .soc-hero h1 {
   font-size: 2.8rem;
-  color: #1a365d;
+  color: #004aad;
   margin-bottom: 1.5rem;
   line-height: 1.2;
 }
@@ -393,4 +393,55 @@ footer {
   margin-top: 1.75rem;
   margin-bottom: 2.25rem;
   font-weight: 600;
+}
+
+/* === TWO COLUMN DROPDOWN SUPPORT === */
+.services-dropdown.two-column {
+  display: none;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  min-width: 520px;
+}
+
+.services-wrapper:hover .services-dropdown {
+  display: grid;
+}
+
+.dropdown-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.dropdown-title {
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: #da4b2a;
+  font-size: 1.05rem;
+  border-bottom: 1px solid #e5e7eb;
+  padding-bottom: 0.4rem;
+}
+
+.dropdown-column a {
+  padding: 1px 4px;
+  font-size: 1.15rem;
+
+  color: #004aad;
+  text-decoration: none;
+}
+
+.dropdown-column a:hover {
+  color: #da4b2a;
+}
+
+/* REMOVE UNDERLINES FROM SERVICE CARDS (FIX) */
+a.service-card,
+a.service-card:visited,
+a.service-card:hover,
+a.service-card:active {
+  text-decoration: none !important;
+  color: inherit !important;
+}
+
+.service-card {
+  cursor: pointer;
 }
